@@ -3,43 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinearLayout en Naranja</title>
+    <title>Plan Silver</title>
     <style>
-        body, html {
+        body {
+            background-image: url('https://firebasestorage.googleapis.com/v0/b/moviemaniaprime.appspot.com/o/Picsart_24-12-29_01-38-57-444.jpg?alt=media&token=2b1fb591-3433-4835-873e-309399263e15');
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
         }
-        .linear-layout {
-            background-color: orange; /* Color de fondo naranja */
-            height: 100%; /* Ocupar todo el alto de la pantalla */
-            width: 100%;  /* Ocupar todo el ancho de la pantalla */
-            display: flex; /* Usado para simular LinearLayout */
-            flex-direction: column; /* Dirección vertical */
-            align-items: center; /* Alineación horizontal al centro */
+        .container {
+            text-align: center;
+            backdrop-filter: blur(5px); /* Agrega un efecto de desenfoque */
         }
-        .inner-linear {
-            width: 200px; /* Ancho de 200px */
-            height: 200px; /* Alto de 200px */
-            border: 1px solid black; /* Solo para visualizar los elementos */
-            display: flex; /* Opción para simular LinearLayout */
-            justify-content: center; /* Centrar contenido horizontalmente */
-            align-items: center; /* Centrar contenido verticalmente */
-            margin: 10px; /* Espacio entre los elementos */
+        .plan {
+            background-color: rgba(34, 34, 34, 0.8); /* Fondo semi-transparente */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        .plan h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .price {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #FFA500;
+            color: black;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background-color: #FF8C00;
+        }
+        .hidden-text {
+            display: none; /* Oculta el texto */
         }
     </style>
 </head>
 <body>
-
-<div class="linear-layout">
-    <div id="l1" class="inner-linear">Plan Silver</div>
-    <div id="l2" class="inner-linear">Plan Diamod</div>
-    <div id="l3" class="inner-linear">Plan Share</div>
-d0709965fb4ec99e0f0b3b101d6fcee9ffccc441
-
-</div>
-
+    <div class="container">
+        <div class="plan">
+            <h1>Plan Silver</h1>
+            <div class="price">199₱/mes</div>
+            <button class="button">PAGAR</button>
+            <div class="hidden-text">259d97YHeceBc65b56bAaXeJbI91VeN2494M</div> <!-- TextView oculto -->
+        </div>
+    </div>
 </body>
 </html>
