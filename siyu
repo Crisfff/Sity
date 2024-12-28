@@ -1,57 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LinearLayout en Naranja</title>
     <style>
-        body,
-        html {
+        body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             width: 100%;
             overflow: hidden;
         }
-
         .linear-layout {
-            background-color: orange;
-            /* Color de fondo naranja */
-            height: 100%;
-            /* Ocupar todo el alto de la pantalla */
-            width: 100%;
-            /* Ocupar todo el ancho de la pantalla */
-            display: flex;
-            /* Usado para simular LinearLayout */
-            flex-direction: column;
-            /* Dirección vertical */
-            align-items: center;
-            /* Alineación horizontal al centro */
+            background-color: orange; /* Color de fondo naranja */
+            height: 100%; /* Ocupar todo el alto de la pantalla */
+            width: 100%;  /* Ocupar todo el ancho de la pantalla */
+            display: flex; /* Usado para simular LinearLayout */
+            flex-direction: column; /* Dirección vertical */
+            align-items: center; /* Alineación horizontal al centro */
         }
-
         .inner-linear {
-            width: 200px;
-            /* Ancho de 200px */
-            height: 200px;
-            /* Alto de 200px */
-            border: 1px solid black;
-            /* Solo para visualizar los elementos */
-            display: flex;
-            /* Opción para simular LinearLayout */
-            justify-content: center;
-            /* Centrar contenido horizontalmente */
-            align-items: center;
-            /* Centrar contenido verticalmente */
-            margin: 10px;
-            //
+            width: 200px; /* Ancho de 200px */
+            height: 200px; /* Alto de 200px */
+            border: 1px solid black; /* Solo para visualizar los elementos */
+            display: flex; /* Opción para simular LinearLayout */
+            justify-content: center; /* Centrar contenido horizontalmente */
+            align-items: center; /* Centrar contenido verticalmente */
+            margin: 10px; /* Espacio entre los elementos */
         }
     </style>
 </head>
-d0709965fb4ec99e0f0b3b101d6fcee9ffccc441
 <body>
 
-    <div class="linear-layout">
-        MovieMania <div id="l1" class="inner-linear">Plan Silver</div>
-        <div id="l2" class="inner-linear">Plan Share</div>
-        <div id="l3" class="inner-linear">Plan Diamond</div>
+<div class="linear-layout">
+    <div id="l1" class="inner-linear">d0709965fb4ec99e0f0b3b101d6fcee9ffccc441</div>
+    <div id="l2" class="inner-linear">Elemento 2</div>
+    <div id="l3" class="inner-linear">Elemento 3</div>
+</div>
+
+</body>
+</html>
